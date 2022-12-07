@@ -1,11 +1,4 @@
 - script:
-  name: script1.py
+  name: homework9_2.py
   desc: >
-    Super fancy script which calcualate some complicated stuff with
-    well-documented code.
-- script:
-  name: script2.py
-  desc: >
-    Yet another script that does something-or-other.
-
-
+    Contains all the functions needed to generate the figures, must download.

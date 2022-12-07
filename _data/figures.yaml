@@ -1,43 +1,21 @@
 - fig:
-  title: "Fig. 1: Paleo cardigan kombucha, pickled brunch shabby chic "
-  filename: script1.py
-  desc:  Used to generate the figure1
-  pic: fig1.png
+  title: "Fig. 1: Predictive Regression of Linear (Left) and Exponential (Right) of Growth Event for Bacterium 1"
+  filename: predictive_regression_1.py
+  desc:  Used to generate the figure
+  pic:
   req:
     - ds: 
-      storage: remote
-      title: Dataset 1
-      link: "http://data.caltech.edu"
+      storage: local
+      title: Caulobacter growth events
+      link: caulobacter_growth_events.csv
 
 - fig:
-  title: "Fig. 2: Activated charcoal tilde kombucha. "
-  filename: script2.py
-  desc: 
-      Used to generate Figure 2, illustrating activated kombucha on tap.
-  pic: fig2.png
+  title: "Fig. 2: Predictive Regression of Linear (Left) and Exponential (Right) of Growth Event for Bacterium 2"
+  filename: predictive_regression_2.py
+  desc:  Used to generate the figure
+  pic:
   req:
-    - ds:
-      title: Kombucha tempura desconstructed measures
-      storage: local 
-      link: dataset2.csv
     - ds: 
       storage: local
-      title: Gravitational wave lo-fi beats to chill and study to
-      link: dataset2.csv
-
-- fig: 
-  title: "Fig. 5: Sustainable pour-over VHS"
-  filename: script1.py
-  desc:
-        Used to generate Figure 5, 
-  pic: fig3.png
-  req:
-    - ds:
-      title: Summarized dataset 1
-      storage: local
-      link: dataset1.csv
-
-    - ds:
-      title: Summarized dataset 2
-      storage: remote
-      link: "http://zenodo.org" 
+      title: Caulobacter growth events
+      link: caulobacter_growth_events.csv
