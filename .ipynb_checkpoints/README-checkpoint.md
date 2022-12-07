@@ -1,5 +1,4 @@
 # Homework 9.2
-This repository is for caulobacter growth experiment!
 This repository is a bare-bones template website for publishing of your work as
 an interactive website. It's tailored for easy inclusion of data files, plots,
 and interactive figures. It is a heavily modified form of the Jekyll template
