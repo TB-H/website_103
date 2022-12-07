@@ -29,6 +29,47 @@ Summary:  >
   to be washed away to allow for easier segmentation. We are looking at 20 growth events
   for one bacterium and 78 for another bacterium in which a growth event is defined as a
   time period in which a bacterium grows before dividing. We notice how bacteria grow
-  exponentially though we are curious on how to model an individual 
+  exponentially though we are curious on how to model an individual event.
+  
+  We are working with assuming that we have normally distributed residuals in which
+  
+  \begin{align}
+  a_i \sim \text{Norm}(a(t_i;a_0, k), \sigma_i) \;\forall i.
+  \end{align}
+  
+  We will start by defining the model in which we have a Normal model with homoscedasticity in which the variances are equal such that we have the following
+  homoscedastic model (in which we are doing so to make the calculations a bit nice):
+  
+  \begin{align}
+  a_i \sim \text{Norm}(a(t_i;a_0, k), \sigma) \;\forall i
+  \end{align}
+  
+  in which we have that the PDF would be
+  
+  \begin{align*}
+  f(a_i ; t_i,a_0, k), \sigma) = \prod_{i=1}^n \frac{1}{\sqrt{2 \pi \sigma^2}} \exp{\left( \frac{-1}{2 \sigma^2} (a_i - a(t_i;a_0, k))^2 \right)}
+  \end{align*}
+  
+  in which the likelihood function is
+  
+  \begin{align*}
+  L (t_i, a_0, k, \sigma; a_i) = \prod_{i=1}^n \frac{1}{\sqrt{2 \pi \sigma^2}} \exp{\left( \frac{-1}{2 \sigma^2} (a_i - a(t_i;a_0, k))^2 \right)}
+  \end{align*}
+  
+  and the log likelihood function is
+  
+  \begin{align}
+  \ell(t_i, a_0, k, \sigma; a_i) = -\frac{n}{2}\,\ln 2\pi - \sum_i \ln \sigma_i - \frac{1}{2}\sum_i \left(\frac{a_i - a(t_i;a_0, k)}{\sigma}\right)^2.
+  \end{align}
+
+  We will
+
+  \begin{align}
+  \ell(t_i, a_0, k, \sigma; a_i) = -\frac{n}{2}\,\ln 2\pi - \sum_i \ln \sigma_i - \frac{1}{2 \sigma^2}\sum_i \left(a_i - a(t_i;a_0, k)\right)^2.
+  \end{align}
+
+  in which we can notice how the sum has no $\sigma$ dependence in which we can focus on minimizing the RSS in which we can apply the same methodology from 8.1
+  and then notice how  $\sigma^* = \sqrt{\text{RSS}^*/n}$ for its MLE, again following the logic for a Normal homoscedastic model.
+  We will apply this model for both the linear and exponential equations. 
 Acknowledgments: > 
   Analysis and website done by Tiba Hamza and Andrea Torres
