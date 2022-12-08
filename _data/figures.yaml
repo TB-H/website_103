@@ -19,3 +19,25 @@
       storage: local
       title: Caulobacter growth events
       link: caulobacter_growth_events.csv
+
+- fig:
+  title: "Fig. 3: Difference of Predictive Regression for Growth Events for Bacterium 1"
+  filename: diff_pd_2.py
+  desc:  Used to generate the figure
+  pic:
+  req:
+    - ds: 
+      storage: local
+      title: Caulobacter growth events
+      link: caulobacter_growth_events.csv
+
+- fig:
+  title: "Fig. 4: Difference of Predictive Regression for Growth Events for Bacterium 2"
+  filename: diff_pd_2.py
+  desc:  Used to generate the figure
+  pic:
+  req:
+    - ds: 
+      storage: local
+      title: Caulobacter growth events
+      link: caulobacter_growth_events.csv

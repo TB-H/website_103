@@ -2,3 +2,7 @@
   name: homework9_2.py
   desc: >
     Contains all the functions needed to generate the figures, must download.
+- script:
+  name: hw9.2.ipynb
+  desc: >
+    Contains all analysis + functions

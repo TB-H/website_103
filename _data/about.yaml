@@ -80,6 +80,8 @@ Summary:  >
   \end{align}
   
   and that $p$ is the number of free parameters in which we will define the log likelihood for a single bacterium and growth event.
+  We found that the AIC for the linear model was much lower than the exponential model such that the weight for the linear model was 
+  nearly zero, causing us to rule it out.
   
 Acknowledgments: > 
   Analysis and website done by Tiba Hamza and Andrea Torres
