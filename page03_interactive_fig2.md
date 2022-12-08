@@ -1,17 +1,14 @@
 ---
 layout: page
-title: Interactive 
-permalink: interactive_a
+title: Predictive Regression 1
+permalink: interactive_b
 sidebar: true
-interactive: interactive_1.html
+interactive: predictive_regression_2.html
 ---
 ---
 
 ## Figure Description
-Below is the predictive regression plot for both the exponential and linear models for bacterium 1 in which we have that
-we have our samples along y and the linear to the left and the exponential to the right. 
-We can notice how we appear to have greater overlap with the exponential cases when looking by eye at the predictive regression although we do have regions for both models in which data points are not within the 95% interval generated. 
-We can especially note for the linear model how the discreptancies appear towards the ends of the line, noticing how for the right end as times increase, we begin to deviate from the linear model. We could note how the linear model could be seen as a first order Taylor approximation of the exponential model in which this would make sense since when doing the exponential model, we are fitting additional components of a series of polynomials. Let's see how this compares to the second bacterium.
+For this type of plot, we have that the linear situation is on the left while the exponential is on the right. We can notice how this discreptancy is less noticeable as for those that have points that do not overlap with the interval appear for both models. I don't think this is very helpful metric on its own, though when zooming in, we can see how this allows us to zoom and make conclusions for each of the plots in which due to the fact they are 86 of them, I think I am going to focus on evaluating the second bacterium once we do a difference plot for our predictive regression. I can notice that for the most part, it appears that the two models fit the data well though there are still points towards the right end in particular that have deviation for both the linear and exponential model, considering how we are evaluating wether or not we have a linear or exponential model. Let's start by generating the samples, this time by using the actual times from the data as the time parameter.
 
 
 
