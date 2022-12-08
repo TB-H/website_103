@@ -71,5 +71,15 @@ Summary:  >
   in which we can notice how the sum has no $\sigma$ dependence in which we can focus on minimizing the RSS in which we can apply the same methodology from 8.1
   and then notice how  $\sigma^* = \sqrt{\text{RSS}^*/n}$ for its MLE, again following the logic for a Normal homoscedastic model.
   We will apply this model for both the linear and exponential equations. 
+  
+  
+  To determine which function fits our data well, we will calculate the AIC for it, recalling that the formula is
+  
+  \begin{align}
+  \text{AIC} = -2\ell(\theta^*;\text{data}) + 2p,
+  \end{align}
+  
+  and that $p$ is the number of free parameters in which we will define the log likelihood for a single bacterium and growth event.
+  
 Acknowledgments: > 
   Analysis and website done by Tiba Hamza and Andrea Torres
